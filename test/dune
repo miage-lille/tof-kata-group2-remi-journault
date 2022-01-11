@@ -1,0 +1,5 @@
+(library
+ (name SUT)
+ (public_name troll-of-fame.test)
+ (libraries alcotest qcheck-core qcheck-alcotest troll-of-fame.lib)
+ (ocamlopt_flags -linkall -g))

@@ -1,0 +1,5 @@
+(executable
+ (name Tof_app)
+ (libraries troll-of-fame.lib)
+ (modes native)
+ (public_name tof))
