@@ -23,7 +23,7 @@ type t =
 [@@deriving show]
 
 let scoring : t -> score =
- fun troll -> ElvesMap.fold (fun k v accum -> Elf.value k * v) troll.kills 0
+ fun troll -> ElvesMap.fold (fun k v accum -> Elf.value k * v + accum) troll.kills 0
 
 
 let update_elves_killed : (kill option -> kill option) -> Elf.t -> t -> t =
